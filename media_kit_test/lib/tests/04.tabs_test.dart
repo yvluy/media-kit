@@ -108,7 +108,7 @@ class TabViewState extends State<TabView> {
     player.setAudioTrack(AudioTrack.no());
     player.setPlaylistMode(PlaylistMode.loop);
     player.open(Media(sources[widget.i % sources.length]));
-    player.stream.error.listen((error) => debugPrint(error));
+    player.stream.error.listen((error) => //debugPrint(error));
   }
 
   @override

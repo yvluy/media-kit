@@ -36,7 +36,7 @@ class _VideoViewParametersScreenState extends State<VideoViewParametersScreen> {
   void initState() {
     super.initState();
     player.open(Media(sources[0]));
-    player.stream.error.listen((error) => debugPrint(error));
+    player.stream.error.listen((error) => //debugPrint(error));
   }
 
   @override

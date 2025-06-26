@@ -39,7 +39,7 @@ Future<void> paintFirstFrame(BuildContext context) async {
 
   for (final controller in controllers) {
     controller.rect.addListener(
-      () => debugPrint(controller.rect.value.toString()),
+      () => //debugPrint(controller.rect.value.toString()),
     );
   }
 

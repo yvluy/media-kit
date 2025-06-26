@@ -500,8 +500,8 @@ Future<void> defaultEnterNativeFullscreen() async {
       );
     }
   } catch (exception, stacktrace) {
-    debugPrint(exception.toString());
-    debugPrint(stacktrace.toString());
+    //debugPrint(exception.toString());
+    //debugPrint(stacktrace.toString());
   }
 }
 
@@ -527,8 +527,8 @@ Future<void> defaultExitNativeFullscreen() async {
       );
     }
   } catch (exception, stacktrace) {
-    debugPrint(exception.toString());
-    debugPrint(stacktrace.toString());
+    //debugPrint(exception.toString());
+    //debugPrint(stacktrace.toString());
   }
 }
 // --------------------------------------------------

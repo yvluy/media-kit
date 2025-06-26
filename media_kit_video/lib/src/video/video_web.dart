@@ -464,8 +464,8 @@ Future<void> defaultEnterNativeFullscreen() async {
   try {
     await document.documentElement?.requestFullscreen().toDart;
   } catch (exception, stacktrace) {
-    debugPrint(exception.toString());
-    debugPrint(stacktrace.toString());
+    //debugPrint(exception.toString());
+    //debugPrint(stacktrace.toString());
   }
 }
 
@@ -474,8 +474,8 @@ Future<void> defaultExitNativeFullscreen() async {
   try {
     await document.exitFullscreen().toDart;
   } catch (exception, stacktrace) {
-    debugPrint(exception.toString());
-    debugPrint(stacktrace.toString());
+    //debugPrint(exception.toString());
+    //debugPrint(stacktrace.toString());
   }
 }
 

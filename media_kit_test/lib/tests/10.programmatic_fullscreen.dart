@@ -32,7 +32,7 @@ class _ProgrammaticFullscreenState extends State<ProgrammaticFullscreen> {
   void initState() {
     super.initState();
     player.open(Media(sources[0]));
-    player.stream.error.listen((error) => debugPrint(error));
+    player.stream.error.listen((error) => //debugPrint(error));
   }
 
   @override
@@ -59,7 +59,7 @@ class _ProgrammaticFullscreenState extends State<ProgrammaticFullscreen> {
                       // - enterFullscreen
                       // - exitFullscreen
                       // - toggleFullscreen
-                      debugPrint(
+                      //debugPrint(
                         'Fullscreen: ${key.currentState?.isFullscreen()}',
                       );
                       if (key.currentState?.isFullscreen() ?? false) {

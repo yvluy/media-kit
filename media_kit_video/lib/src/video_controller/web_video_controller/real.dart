@@ -66,7 +66,7 @@ class WebVideoController extends PlatformVideoController {
     // Listen to the resize event of the [html.VideoElement].
     controller._resizeStreamSubscription = controller._element?.onResize.listen(
       (event) {
-        debugPrint(
+        //debugPrint(
           'media_kit: WebVideoController: ${controller._element?.videoWidth}, ${controller._element?.videoHeight}',
         );
         // Update the size of the [PlatformVideoController].

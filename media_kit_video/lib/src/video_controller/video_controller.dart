@@ -129,8 +129,8 @@ class VideoController {
         }
       } catch (exception, stacktrace) {
         platform.completeError(exception);
-        debugPrint(exception.toString());
-        debugPrint(stacktrace.toString());
+        //debugPrint(exception.toString());
+        //debugPrint(stacktrace.toString());
       }
 
       if (!(player.platform?.videoControllerCompleter.isCompleted ?? true)) {

@@ -35,7 +35,7 @@ class _MultiplePlayerMultipleVideoScreenState
     super.initState();
     for (final player in players) {
       player.open(Media(sources[0]));
-      player.stream.error.listen((error) => debugPrint(error));
+      player.stream.error.listen((error) => //debugPrint(error));
     }
   }
 

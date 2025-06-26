@@ -969,7 +969,7 @@ MaterialVideoControlsTheme(
       const Spacer(),
       MaterialDesktopCustomButton(
         onPressed: () {
-          debugPrint('Custom "Settings" button pressed.');
+          //debugPrint('Custom "Settings" button pressed.');
         },
         icon: const Icon(Icons.settings),
       ),
@@ -1017,7 +1017,7 @@ MaterialDesktopVideoControlsTheme(
       const Spacer(),
       MaterialDesktopCustomButton(
         onPressed: () {
-          debugPrint('Custom "Settings" button pressed.');
+          //debugPrint('Custom "Settings" button pressed.');
         },
         icon: const Icon(Icons.settings),
       ),

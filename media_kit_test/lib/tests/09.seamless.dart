@@ -125,8 +125,8 @@ class _SeamlessState extends State<Seamless> {
                 createPlayer(i - 1);
               }
 
-              debugPrint('players: ${players.keys}');
-              debugPrint('controllers: ${controllers.keys}');
+              //debugPrint('players: ${players.keys}');
+              //debugPrint('controllers: ${controllers.keys}');
             },
             itemBuilder: (context, i) {
               final controller = controllers[i];

@@ -258,13 +258,13 @@ void main() {
         final Completer<void> ended = Completer<void>();
         controller.addListener(() {
           if (!started.isCompleted && controller.value.isBuffering) {
-            debugPrint('STARTED!');
+            //debugPrint('STARTED!');
             started.complete();
           }
           if (started.isCompleted &&
               !controller.value.isBuffering &&
               !ended.isCompleted) {
-            debugPrint('ENDED!');
+            //debugPrint('ENDED!');
             ended.complete();
           }
         });

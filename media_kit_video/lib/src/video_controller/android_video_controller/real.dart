@@ -157,8 +157,8 @@ class AndroidVideoController extends PlatformVideoController {
       final bool isEmulator = await _channel.invokeMethod('Utils.IsEmulator');
       if (isEmulator) {
         hw = false;
-        debugPrint('media_kit: Emulator detected.');
-        debugPrint('media_kit: Enforcing S/W rendering.');
+        //debugPrint('media_kit: Emulator detected.');
+        //debugPrint('media_kit: Enforcing S/W rendering.');
       }
       return hw ? 'auto-safe' : 'no';
     }
@@ -207,7 +207,7 @@ class AndroidVideoController extends PlatformVideoController {
     void listener() {
       final value = controller.id.value;
       if (value != null) {
-        debugPrint('AndroidVideoController: Texture ID: $value');
+        //debugPrint('AndroidVideoController: Texture ID: $value');
         completer.complete();
       }
     }
@@ -287,8 +287,8 @@ class AndroidVideoController extends PlatformVideoController {
         ..setMethodCallHandler(
           (MethodCall call) async {
             try {
-              debugPrint(call.method.toString());
-              debugPrint(call.arguments.toString());
+              //debugPrint(call.method.toString());
+              //debugPrint(call.arguments.toString());
               switch (call.method) {
                 case 'VideoOutput.Resize':
                   {
@@ -312,7 +312,7 @@ class AndroidVideoController extends PlatformVideoController {
                   {
                     // Notify about updated texture ID & [Rect].
                     final int handle = call.arguments['handle'];
-                    debugPrint(handle.toString());
+                    //debugPrint(handle.toString());
                     // Notify about the first frame being rendered.
                     final completer = _controllers[handle]
                         ?.waitUntilFirstFrameRenderedCompleter;
@@ -327,8 +327,8 @@ class AndroidVideoController extends PlatformVideoController {
                   }
               }
             } catch (exception, stacktrace) {
-              debugPrint(exception.toString());
-              debugPrint(stacktrace.toString());
+              //debugPrint(exception.toString());
+              //debugPrint(stacktrace.toString());
             }
           },
         );

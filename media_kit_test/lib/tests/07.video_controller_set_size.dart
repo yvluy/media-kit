@@ -27,7 +27,7 @@ class _VideoControllerSetSizeScreenState
     player.setAudioTrack(AudioTrack.no());
     player.setPlaylistMode(PlaylistMode.loop);
     player.open(Media(sources[0]));
-    player.stream.error.listen((error) => debugPrint(error));
+    player.stream.error.listen((error) => //debugPrint(error));
   }
 
   @override
